@@ -1,7 +1,7 @@
 // ***** Authored Dependencies *****
 
-@import "colours";
-@import "fonts";
+@use "colours";
+@use "fonts";
 @import "mixin";
 
 // ***** Generic *****
@@ -16,7 +16,7 @@ body {
 
 .wrapper {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +26,47 @@ body {
 .header {
     background-image: url("../images/header.png");
     width: 100%;
-    height: 100%;
+    height: 82rem;
     background-size: cover;
+    background-position: 20%;
+}
+
+.choose-us {
+    background-image: url("../images/why-choose-us.png");
+    width: 100%;
+    height: 68.5rem;
+    background-position: 13%;
+}
+
+.works {
+    width: 100%;
+    height: 34rem;
+    background-color: colours.$bg-twilight;
+}
+
+.spain-top {
+    background-image: url("../images/spain-top.png");
+    width: 100%;
+    height: 70rem;
+    background-position: 13%;
+}
+
+.spain-bottom {
+    background-image: url("../images/spain-bottom.png");
+    width: 100%;
+    height: 70rem;
     background-position: center;
+}
+
+.our-tourists {
+    background-image: url("../images/our-tourists.png");
+    width: 100%;
+    height: 73.1rem;
+    background-position: 20%;    
+}
+
+.footer {
+    width: 100%;
+    height: 27.1rem;
+    background-color: colours.$bg-dark;
 }
