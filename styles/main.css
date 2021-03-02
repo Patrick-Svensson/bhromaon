@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .header {
@@ -21,6 +22,43 @@ body {
   height: 82rem;
   background-size: cover;
   background-position: 20%;
+}
+
+.navbar {
+  width: 100%;
+  height: 6rem;
+  background-color: #5474fd;
+  position: absolute;
+  top: 0;
+}
+.navbar-brand {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.14rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 0.5rem;
+}
+.navbar-toggler-icon {
+  font-size: 2.6rem;
+  color: #fff;
+  padding-top: 0.5rem;
+}
+.navbar-collapse {
+  width: 100%;
+  background-color: #5474fd;
+  padding-left: 1.5rem;
+}
+
+.nav-link {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .choose-us {
@@ -61,6 +99,34 @@ body {
   width: 100%;
   height: 27.1rem;
   background-color: #232323;
+}
+
+@media screen and (min-width: 993px) {
+  .navbar {
+    height: 8.3rem;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-collapse {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar-nav {
+    width: 70%;
+    justify-content: space-between;
+  }
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.24rem;
+  }
+
+  .container-fluid {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -21,6 +21,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 // ***** Header *****
@@ -31,6 +32,48 @@ body {
     height: 82rem;
     background-size: cover;
     background-position: 20%;
+}
+
+// ***** Navigation *****
+
+.navbar {
+    width: 100%;
+    height: 6rem;
+    background-color: colours.$bhromaon-blue;
+    position: absolute;
+    top: 0;
+
+    &-brand {
+        font-family: fonts.$main;
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        letter-spacing: .14rem;
+        text-transform: uppercase;
+        color: colours.$headings;
+        padding-left: .5rem;
+    }
+
+    &-toggler-icon {
+        font-size: 2.6rem;
+        color: colours.$headings;
+        padding-top: .5rem;
+    }
+
+    &-collapse {
+        width: 100%;
+        background-color: colours.$bhromaon-blue;
+        padding-left: 1.5rem;
+    }
+}
+
+.nav-link {
+    font-family: fonts.$secondary;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    color: colours.$headings;
 }
 
 // ***** Why Choose Us *****
@@ -81,4 +124,37 @@ body {
     width: 100%;
     height: 27.1rem;
     background-color: colours.$bg-dark;
+}
+
+// ***** Media queries *****
+
+@media screen and (min-width: 993px) {
+    .navbar {
+        height: 8.3rem;
+        position: sticky;
+        display: flex;
+        justify-content: center;
+
+        &-collapse {
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &-nav {
+            width: 70%;
+            justify-content: space-between;
+        }
+
+        &-brand {            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 2.6rem;
+            letter-spacing: .24rem;
+        }
+    
+    }
+
+    .container-fluid {
+        width: 70%;
+    }
 }
