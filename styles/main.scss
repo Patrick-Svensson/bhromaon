@@ -32,6 +32,105 @@ body {
     height: 82rem;
     background-size: cover;
     background-position: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__text {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__heading {
+        font-size: 2.5rem;
+        color: colours.$headings;
+        font-family: fonts.$main;
+        letter-spacing: .48rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__sub-heading {
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: .68rem;
+        color: colours.$headings;
+        font-family: fonts.$main;
+    }
+
+    &__scroll {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__scroll--text {
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: .28rem;
+        color: colours.$headings;
+        font-family: fonts.$main;
+        margin-bottom: 0;
+    }
+}
+
+.fa-chevron-down {
+    font-size: 1rem;
+    color: colours.$headings;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    min-width: 26rem;
+    border: 1px solid colours.$headings;
+    margin-bottom: 2rem;
+
+    &__placeholder {
+        min-width: 70%;
+        font-family: fonts.$main;
+        font-size: 1rem;
+        font-weight: 400;
+        color: colours.$placeholder;
+        padding: 1rem;
+    }
+
+    &__button {
+        min-width:30%;
+        font-family: fonts.$secondary;
+        font-weight: 400;
+        font-size: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: colours.$bhromaon-blue;
+        text-decoration: none; 
+        color: colours.$headings;
+        padding: 1.1rem;
+
+        &:hover {
+            background-color: darken(colours.$bhromaon-blue, $amount: 10);
+            color: darken(colours.$headings, $amount: 10);
+        }
+    }
+
+.fa-search {
+    padding-left: .5rem;
+}
+
 }
 
 // ***** Navigation *****
@@ -39,6 +138,8 @@ body {
 .navbar {
     width: 100%;
     height: 6rem;
+    display: flex;
+    justify-content: space-between;
     background-color: colours.$bhromaon-blue;
     position: absolute;
     top: 0;
@@ -61,7 +162,6 @@ body {
     }
 
     &-collapse {
-        width: 100%;
         background-color: colours.$bhromaon-blue;
         padding-left: 1.5rem;
     }
@@ -80,6 +180,7 @@ body {
 
 .choose-us {
     background-image: url("../images/why-choose-us.png");
+    background-repeat: no-repeat;
     width: 100%;
     height: 68.5rem;
     background-position: 13%;
@@ -97,13 +198,15 @@ body {
 
 .spain-top {
     background-image: url("../images/spain-top.png");
-    width: 100%;
+    background-repeat: no-repeat;
+    min-width: 100%;
     height: 70rem;
     background-position: 13%;
 }
 
 .spain-bottom {
     background-image: url("../images/spain-bottom.png");
+    background-repeat: no-repeat;
     width: 100%;
     height: 70rem;
     background-position: center;
@@ -113,6 +216,7 @@ body {
 
 .our-tourists {
     background-image: url("../images/our-tourists.png");
+    background-repeat: no-repeat;
     width: 100%;
     height: 73.1rem;
     background-position: 20%;    
@@ -129,20 +233,24 @@ body {
 // ***** Media queries *****
 
 @media screen and (min-width: 993px) {
+
+    // ***** Navigation *****
+
     .navbar {
         height: 8.3rem;
         position: sticky;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
 
         &-collapse {
-            width: 40%;
+            max-width: 60%;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
+            padding: 0;
         }
 
         &-nav {
-            width: 70%;
+            width: 100%;
             justify-content: space-between;
         }
 
@@ -151,10 +259,57 @@ body {
             line-height: 2.6rem;
             letter-spacing: .24rem;
         }
+
+        .nav-link {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
     
     }
-
+    
     .container-fluid {
         width: 70%;
+    }
+
+    .input-field {
+        min-width: 65rem;
+
+        &__placeholder {
+            font-size: 1.4rem;
+        }
+
+        &__button {
+            font-size: 1.4rem;
+        }
+    }
+    
+    // ***** Header *****
+
+    .header {
+
+        &__heading {
+            font-size: 4.8rem;
+        }
+
+        &__sub-heading {
+            font-size: 2.2rem;
+            letter-spacing: .68rem;
+        }
+
+        &__scroll--text {
+            font-size: 1.4rem;
+        }
+    }
+
+    .fa-chevron-down {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-link {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
     }
 }

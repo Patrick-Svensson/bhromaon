@@ -22,11 +22,101 @@ body {
   height: 82rem;
   background-size: cover;
   background-position: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__container {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__text {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__heading {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0.48rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header__sub-heading {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.68rem;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+}
+.header__scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__scroll--text {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.28rem;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 0;
+}
+
+.fa-chevron-down {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  min-width: 26rem;
+  border: 1px solid #fff;
+  margin-bottom: 2rem;
+}
+.input-field__placeholder {
+  min-width: 70%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #999;
+  padding: 1rem;
+}
+.input-field__button {
+  min-width: 30%;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #5474fd;
+  text-decoration: none;
+  color: #fff;
+  padding: 1.1rem;
+}
+.input-field__button:hover {
+  background-color: #224bfc;
+  color: #e6e6e6;
+}
+.input-field .fa-search {
+  padding-left: 0.5rem;
 }
 
 .navbar {
   width: 100%;
   height: 6rem;
+  display: flex;
+  justify-content: space-between;
   background-color: #5474fd;
   position: absolute;
   top: 0;
@@ -47,7 +137,6 @@ body {
   padding-top: 0.5rem;
 }
 .navbar-collapse {
-  width: 100%;
   background-color: #5474fd;
   padding-left: 1.5rem;
 }
@@ -63,6 +152,7 @@ body {
 
 .choose-us {
   background-image: url("../images/why-choose-us.png");
+  background-repeat: no-repeat;
   width: 100%;
   height: 68.5rem;
   background-position: 13%;
@@ -76,13 +166,15 @@ body {
 
 .spain-top {
   background-image: url("../images/spain-top.png");
-  width: 100%;
+  background-repeat: no-repeat;
+  min-width: 100%;
   height: 70rem;
   background-position: 13%;
 }
 
 .spain-bottom {
   background-image: url("../images/spain-bottom.png");
+  background-repeat: no-repeat;
   width: 100%;
   height: 70rem;
   background-position: center;
@@ -90,6 +182,7 @@ body {
 
 .our-tourists {
   background-image: url("../images/our-tourists.png");
+  background-repeat: no-repeat;
   width: 100%;
   height: 73.1rem;
   background-position: 20%;
@@ -106,15 +199,16 @@ body {
     height: 8.3rem;
     position: sticky;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   .navbar-collapse {
-    width: 40%;
+    max-width: 60%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    padding: 0;
   }
   .navbar-nav {
-    width: 70%;
+    width: 100%;
     justify-content: space-between;
   }
   .navbar-brand {
@@ -123,9 +217,44 @@ body {
     line-height: 2.6rem;
     letter-spacing: 0.24rem;
   }
+  .navbar .nav-link {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
 
   .container-fluid {
     width: 70%;
+  }
+
+  .input-field {
+    min-width: 65rem;
+  }
+  .input-field__placeholder {
+    font-size: 1.4rem;
+  }
+  .input-field__button {
+    font-size: 1.4rem;
+  }
+
+  .header__heading {
+    font-size: 4.8rem;
+  }
+  .header__sub-heading {
+    font-size: 2.2rem;
+    letter-spacing: 0.68rem;
+  }
+  .header__scroll--text {
+    font-size: 1.4rem;
+  }
+
+  .fa-chevron-down {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-link {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
   }
 }
 
