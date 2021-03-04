@@ -1,0 +1,24 @@
+@mixin button {
+    width: 18rem;
+    height: 4rem;
+    border-bottom: 4rem solid colours.$button;
+    border-right: 14rem solid colours.$bhromaon-blue;
+    margin-top: 1rem;
+    position: relative;
+}
+
+@mixin button-link {
+    width: 18rem;
+    font-family: fonts.$secondary;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: colours.$headings;
+    text-decoration: none;
+    // text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 1rem;
+    left: 3rem;
+}
