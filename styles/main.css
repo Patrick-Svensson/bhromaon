@@ -90,6 +90,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   color: #999;
+  border: 1px solid #fff;
+  text-align: center;
   padding: 1rem;
 }
 .input-field__button {
@@ -312,10 +314,14 @@ body {
     min-width: 65rem;
   }
   .input-field__placeholder {
+    min-width: 80%;
     font-size: 1.4rem;
+    letter-spacing: 0.28rem;
   }
   .input-field__button {
+    min-width: 20%;
     font-size: 1.4rem;
+    letter-spacing: 0.14rem;
   }
 
   .navbar {

@@ -108,6 +108,8 @@ body {
         font-size: 1rem;
         font-weight: 400;
         color: colours.$placeholder;
+        border: 1px solid colours.$headings;
+        text-align: center;
         padding: 1rem;
     }
 
@@ -380,11 +382,15 @@ body {
         min-width: 65rem;
 
         &__placeholder {
+            min-width: 80%;
             font-size: 1.4rem;
+            letter-spacing: .28rem;
         }
 
         &__button {
+            min-width: 20%;
             font-size: 1.4rem;
+            letter-spacing: .14rem;
         }
     }
 
@@ -498,7 +504,7 @@ body {
 @media screen and (min-width: 1200px) {
 
     // ***** Navigation *****
-    
+
     .nav-link {
         font-size: 1.4rem;
         line-height: 2.6rem;
