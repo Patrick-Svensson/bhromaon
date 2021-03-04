@@ -293,6 +293,31 @@ body {
 }
 
 @media screen and (min-width: 993px) {
+  .header__heading {
+    font-size: 4.8rem;
+  }
+  .header__sub-heading {
+    font-size: 2.2rem;
+    letter-spacing: 0.68rem;
+  }
+  .header__scroll--text {
+    font-size: 1.4rem;
+  }
+
+  .fa-chevron-down {
+    font-size: 1.4rem;
+  }
+
+  .input-field {
+    min-width: 65rem;
+  }
+  .input-field__placeholder {
+    font-size: 1.4rem;
+  }
+  .input-field__button {
+    font-size: 1.4rem;
+  }
+
   .navbar {
     height: 8.3rem;
     position: sticky;
@@ -322,31 +347,6 @@ body {
 
   .container-fluid {
     width: 70%;
-  }
-
-  .input-field {
-    min-width: 65rem;
-  }
-  .input-field__placeholder {
-    font-size: 1.4rem;
-  }
-  .input-field__button {
-    font-size: 1.4rem;
-  }
-
-  .header__heading {
-    font-size: 4.8rem;
-  }
-  .header__sub-heading {
-    font-size: 2.2rem;
-    letter-spacing: 0.68rem;
-  }
-  .header__scroll--text {
-    font-size: 1.4rem;
-  }
-
-  .fa-chevron-down {
-    font-size: 1.4rem;
   }
 
   .choose-us {
