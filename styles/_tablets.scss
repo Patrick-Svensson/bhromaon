@@ -1,0 +1,21 @@
+// ***** Media queries *****
+
+@media screen and (min-width: 481px) {
+
+    .spain-box__description {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+        letter-spacing: .08rem;
+    }
+
+    .button {
+        align-self: flex-start;
+
+        &--large {
+            font-size: 1.6rem;
+            padding-top: 1.4em;
+            padding-bottom: 1.2em;
+        }
+    }   
+}
+

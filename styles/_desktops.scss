@@ -1,0 +1,34 @@
+@media screen and (min-width: 1200px) {
+
+    // ***** Navigation *****
+
+    .nav-link {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+    }
+
+    // ***** Why Choose Us *****
+
+    .choose-us {
+
+        &__images-container {
+            min-width: 43rem;
+            align-items: flex-start;
+        }
+
+        &__images {
+            max-width: 73%;
+        }
+
+        &__images--bottom {
+            align-self: flex-end;
+        }    
+    }
+
+    // ***** Spain Top *****    
+
+    .spain {
+        width: 49.6%;
+        justify-content: flex-end;
+    }
+}

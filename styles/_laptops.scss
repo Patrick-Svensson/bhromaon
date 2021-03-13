@@ -1,0 +1,213 @@
+@media screen and (min-width: 769px) {
+    
+    .spain {
+        align-items: flex-end;
+
+            &-box {
+                width: 62%;
+                height: 73%;
+
+            &__content {
+                height: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 993px) {
+
+    // ***** Header *****
+
+    .header {
+
+        &__heading {
+            font-size: 4.8rem;
+        }
+
+        &__sub-heading {
+            font-size: 2.2rem;
+            letter-spacing: .68rem;
+        }
+
+        &__scroll--text {
+            font-size: 1.4rem;
+        }
+    }
+
+    .fa-chevron-down {
+        font-size: 1.4rem;
+    }
+
+// ***** Header Input Field *****
+
+    .input-field {
+        min-width: 65rem;
+
+        &__placeholder {
+            min-width: 80%;
+            font-size: 1.4rem;
+            letter-spacing: .28rem;
+        }
+
+        &__button {
+            min-width: 20%;
+            font-size: 1.4rem;
+            letter-spacing: .14rem;
+        }
+    }
+
+    // ***** Navigation *****
+
+    .navbar {
+        height: 8.3rem;
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+
+        &-collapse {
+            max-width: 60%;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        &-nav {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        &-brand {            
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 2.6rem;
+            letter-spacing: .24rem;
+        }
+
+        .nav-link {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+    
+    }
+    
+    .container-fluid {
+        width: 70%;
+    }
+
+    // ***** Why Choose Us *****
+
+.choose-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 63%;
+        height: 45rem;
+    }
+
+    &__content-container {
+        width: 65%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    &__text-container {
+        max-width: 78%;
+        min-height: 38rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__heading {
+        font-size: 3.6rem;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+    }
+
+    &__images-container {
+        min-width: 35rem;
+        height: 100%;
+    }
+
+    &__images {
+        max-width: 100%;
+    }
+}
+
+    // ***** How It Works *****
+
+    .works {
+
+        &__arcs {
+            width:75%;  
+        }
+
+        &__arcs-wrapper {
+            width: 77rem;
+            height: 14rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        
+        &__icon-wrapper {
+            width: 77rem;
+            height: 14rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            position: absolute;
+            top: 2rem;
+            left: auto;
+            right: auto; 
+        }
+    
+        &__text {
+            width: 90rem;
+            height: 10rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        &__heading {
+            font-size: 3.6rem;
+            line-height: .26rem;
+        }
+
+        &__icon {
+            font-size: 5rem;
+        }
+    }
+
+    // ***** Footer *****
+
+    .footer {
+        &__heading {
+            font-size: 2.4rem;
+        }
+
+        &__sub-heading {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+
+    // ***** Why Choose Us *****
+
+    .choose-us__wrapper {
+        width: 75%;
+    }
+}
+
