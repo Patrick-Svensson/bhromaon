@@ -24,12 +24,19 @@ body {
     position: relative;
 }
 
-.button {
-    @include button;
+// ***** Buttons *****
 
-    &__link {
-        @include button-link;
-    }
+.button {
+    align-self: center;
+    position: relative
+}
+
+.button--light {
+    @include button-bg-light;
+}
+
+.button--dark {
+    @include button-bg-dark;
 }
 
 // ***** Header *****
@@ -155,6 +162,7 @@ body {
     background-color: colours.$bhromaon-blue;
     position: absolute;
     top: 0;
+    z-index: 1;
 
     &-brand {
         font-family: fonts.$main;
@@ -238,6 +246,7 @@ body {
         font-family: fonts.$main;
         font-weight: normal;
         font-size: 1rem;
+        letter-spacing: .1rem;
         color: colours.$text;
     }
 
@@ -272,6 +281,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    z-index: 0;
 
 
     &__arcs-wrapper {
@@ -335,17 +345,72 @@ body {
     }
 }
 
-// ***** Spain *****
+// ***** Spain Top *****
 
-.spain-top {
-    background-image: url("../images/spain-top.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 13%;
-    min-width: 100%;
-    height: 70rem;
-    
+.spain {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-top {
+        background-image: url("../images/spain-top.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 13%;
+        min-width: 100%;
+        height: 70rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &-box {
+        width: 85%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: colours.$bg-dark;
+        opacity: 90%;
+
+        &__content {
+            width: 90%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__country {
+            font-family: fonts.$main;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: .2rem;
+            color: colours.$text;
+        }
+
+        &__site {
+            @include spain-text;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding-bottom: 1rem;
+        }
+
+        &__description {
+            @include spain-text;
+            font-size: 1.2rem;
+            letter-spacing: .06rem;
+        }
+
+        &__button{
+            padding-right: 3.8em;
+            padding-left: 3.8em;
+        }
+    }
 }
+
+// ***** Spain Bottom *****
 
 .spain-bottom {
     background-image: url("../images/spain-bottom.png");
@@ -427,6 +492,41 @@ body {
 }
 
 // ***** Media queries *****
+
+@media screen and (min-width: 481px) {
+
+    .spain-box__description {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+        letter-spacing: .08rem;
+    }
+
+    .button {
+        align-self: flex-start;
+
+        &--large {
+            font-size: 1.6rem;
+            padding-top: 1.4em;
+            padding-bottom: 1.2em;
+        }
+    }   
+}
+
+@media screen and (min-width: 769px) {
+    
+    .spain {
+        align-items: flex-end;
+
+            &-box {
+                width: 62%;
+                height: 73%;
+
+            &__content {
+                height: 70%;
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 993px) {
 
@@ -531,7 +631,7 @@ body {
     }
     
     &__text-container {
-        max-width: 80%;
+        max-width: 78%;
         min-height: 38rem;
         display: flex;
         flex-direction: column;
@@ -561,7 +661,7 @@ body {
     .works {
 
         &__arcs {
-            width:100%;  
+            width:75%;  
         }
 
         &__arcs-wrapper {
@@ -614,23 +714,11 @@ body {
             font-size: 1.6rem;
         }
     }
-    
-    // ***** Buttons *****
-
-    .button {
-        align-self: flex-start;
-        width: 22.8rem;
-        height: 6.3 rem;
-
-        &__text {
-            font-size: 1.6rem;
-        }
-    }
 }
 
 @media (min-width: 993px) and (max-width: 1199px) {
 
-    // ***** How It Works *****
+    // ***** Why Choose Us *****
 
     .choose-us__wrapper {
         width: 75%;
@@ -646,6 +734,8 @@ body {
         line-height: 2.6rem;
     }
 
+    // ***** Why Choose Us *****
+
     .choose-us {
 
         &__images-container {
@@ -660,5 +750,12 @@ body {
         &__images--bottom {
             align-self: flex-end;
         }    
+    }
+
+    // ***** Spain Top *****    
+
+    .spain {
+        width: 49.6%;
+        justify-content: flex-end;
     }
 }

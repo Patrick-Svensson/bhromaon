@@ -17,26 +17,39 @@ body {
 }
 
 .button {
-  width: 18rem;
-  height: 4rem;
-  border-bottom: 4rem solid #496bfe;
-  border-right: 14rem solid #5474fd;
-  margin-top: 1rem;
+  align-self: center;
   position: relative;
 }
-.button__link {
-  width: 18rem;
+
+.button--light {
   font-family: "Aleo", serif;
   font-weight: 400;
   font-size: 1.2rem;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
-  color: #fff;
+  text-align: center;
   text-decoration: none;
+  color: #fff;
+  background-color: #5474fd;
+  padding: 1em 2.4em 0.8em 2.4em;
+  position: relative;
+}
+
+.button--dark {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 1em 2.4em 0.8em 2.4em;
+  background-color: #496bfe;
+  clip-path: polygon(0 0, 25% 0, 50% 100%, 0% 100%);
   position: absolute;
-  margin: auto;
-  top: 1rem;
-  left: 3rem;
+  top: 0;
+  left: 0;
 }
 
 .header {
@@ -145,6 +158,7 @@ body {
   background-color: #5474fd;
   position: absolute;
   top: 0;
+  z-index: 1;
 }
 .navbar-brand {
   font-family: "Josefin Sans", sans-serif;
@@ -219,6 +233,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: normal;
   font-size: 1rem;
+  letter-spacing: 0.1rem;
   color: #e8e8e8;
 }
 .choose-us__images-container {
@@ -247,6 +262,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  z-index: 0;
 }
 .works__arcs-wrapper {
   width: 20rem;
@@ -299,6 +315,13 @@ body {
   color: #e8e8e8;
 }
 
+.spain {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .spain-top {
   background-image: url("../images/spain-top.png");
   background-repeat: no-repeat;
@@ -306,6 +329,50 @@ body {
   background-position: 13%;
   min-width: 100%;
   height: 70rem;
+  display: flex;
+  align-items: center;
+}
+.spain-box {
+  width: 85%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #232323;
+  opacity: 90%;
+}
+.spain-box__content {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.spain-box__country {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 0.2rem;
+  color: #e8e8e8;
+}
+.spain-box__site {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: #e8e8e8;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+.spain-box__description {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: #e8e8e8;
+  font-size: 1.2rem;
+  letter-spacing: 0.06rem;
+}
+.spain-box__button {
+  padding-right: 3.8em;
+  padding-left: 3.8em;
 }
 
 .spain-bottom {
@@ -375,6 +442,34 @@ body {
   color: #5474fd;
 }
 
+@media screen and (min-width: 481px) {
+  .spain-box__description {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.08rem;
+  }
+
+  .button {
+    align-self: flex-start;
+  }
+  .button--large {
+    font-size: 1.6rem;
+    padding-top: 1.4em;
+    padding-bottom: 1.2em;
+  }
+}
+@media screen and (min-width: 769px) {
+  .spain {
+    align-items: flex-end;
+  }
+  .spain-box {
+    width: 62%;
+    height: 73%;
+  }
+  .spain-box__content {
+    height: 70%;
+  }
+}
 @media screen and (min-width: 993px) {
   .header__heading {
     font-size: 4.8rem;
@@ -455,7 +550,7 @@ body {
     align-items: flex-end;
   }
   .choose-us__text-container {
-    max-width: 80%;
+    max-width: 78%;
     min-height: 38rem;
     display: flex;
     flex-direction: column;
@@ -476,7 +571,7 @@ body {
   }
 
   .works__arcs {
-    width: 100%;
+    width: 75%;
   }
   .works__arcs-wrapper {
     width: 77rem;
@@ -518,15 +613,6 @@ body {
   .footer__sub-heading {
     font-size: 1.6rem;
   }
-
-  .button {
-    align-self: flex-start;
-    width: 22.8rem;
-    height: 6.3 rem;
-  }
-  .button__text {
-    font-size: 1.6rem;
-  }
 }
 @media (min-width: 993px) and (max-width: 1199px) {
   .choose-us__wrapper {
@@ -548,6 +634,11 @@ body {
   }
   .choose-us__images--bottom {
     align-self: flex-end;
+  }
+
+  .spain {
+    width: 49.6%;
+    justify-content: flex-end;
   }
 }
 

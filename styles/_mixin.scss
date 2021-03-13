@@ -1,24 +1,39 @@
-@mixin button {
-    width: 18rem;
-    height: 4rem;
-    border-bottom: 4rem solid colours.$button;
-    border-right: 14rem solid colours.$bhromaon-blue;
-    margin-top: 1rem;
-    position: relative;
-}
+@use "fonts";
+@use "colours";
 
-@mixin button-link {
-    width: 18rem;
+@mixin button-bg-light {
     font-family: fonts.$secondary;
     font-weight: 400;
     font-size: 1.2rem;
-    letter-spacing: 1.2px;
+    letter-spacing: .15rem;
     text-transform: uppercase;
-    color: colours.$headings;
+    text-align: center;
     text-decoration: none;
-    // text-align: center;
+    color: colours.$headings;
+    background-color: colours.$bhromaon-blue;
+    padding: 1em 2.4em .8em 2.4em; 
+    position: relative; 
+}
+
+@mixin button-bg-dark {
+    font-family: fonts.$secondary;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: colours.$headings;
+    padding: 1em 2.4em .8em 2.4em;
+    background-color: colours.$button;
+    clip-path: polygon(0 0, 25% 0, 50% 100%, 0% 100%);
     position: absolute;
-    margin: auto;
-    top: 1rem;
-    left: 3rem;
+    top: 0;
+    left: 0;
+}
+
+@mixin spain-text {
+    font-family: fonts.$main;
+    font-weight: 400;
+    color: colours.$text;
 }
