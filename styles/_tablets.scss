@@ -2,6 +2,16 @@
 
 @media screen and (min-width: 481px) {
 
+    body {
+        margin: 1.4rem;
+    }
+
+    .navbar{
+        border-top: 1.4rem solid colours.$headings;
+        border-right: 1.4rem solid colours.$headings;
+        border-left: 1.4rem solid colours.$headings;    
+    }
+
     .spain-box__description {
         font-size: 1.4rem;
         line-height: 2.6rem;

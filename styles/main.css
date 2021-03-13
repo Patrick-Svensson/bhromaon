@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 1.4rem;
+  margin: 0.8rem;
 }
 
 .wrapper {
@@ -50,6 +50,48 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #5474fd;
+  border-top: 0.8rem solid #fff;
+  border-right: 0.8rem solid #fff;
+  border-left: 0.8rem solid #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.navbar-brand {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.14rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 0.5rem;
+}
+.navbar-toggler-icon {
+  font-size: 2.6rem;
+  color: #fff;
+  padding-top: 0.5rem;
+}
+.navbar-collapse {
+  background-color: #5474fd;
+  padding-left: 1.5rem;
+}
+
+.nav-link {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .header {
@@ -148,45 +190,6 @@ body {
 }
 .input-field .fa-search {
   padding-left: 0.5rem;
-}
-
-.navbar {
-  width: 100%;
-  height: 6rem;
-  display: flex;
-  justify-content: space-between;
-  background-color: #5474fd;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-.navbar-brand {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  letter-spacing: 0.14rem;
-  text-transform: uppercase;
-  color: #fff;
-  padding-left: 0.5rem;
-}
-.navbar-toggler-icon {
-  font-size: 2.6rem;
-  color: #fff;
-  padding-top: 0.5rem;
-}
-.navbar-collapse {
-  background-color: #5474fd;
-  padding-left: 1.5rem;
-}
-
-.nav-link {
-  font-family: "Aleo", serif;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 2.6rem;
-  text-transform: uppercase;
-  color: #fff;
 }
 
 .choose-us {
@@ -382,6 +385,8 @@ body {
   background-position: center;
   width: 100%;
   height: 70rem;
+  display: flex;
+  align-items: center;
 }
 
 .our-tourists {
@@ -443,6 +448,16 @@ body {
 }
 
 @media screen and (min-width: 481px) {
+  body {
+    margin: 1.4rem;
+  }
+
+  .navbar {
+    border-top: 1.4rem solid #fff;
+    border-right: 1.4rem solid #fff;
+    border-left: 1.4rem solid #fff;
+  }
+
   .spain-box__description {
     font-size: 1.4rem;
     line-height: 2.6rem;
@@ -505,6 +520,7 @@ body {
     position: sticky;
     display: flex;
     justify-content: space-between;
+    border: none;
   }
   .navbar-collapse {
     max-width: 60%;
@@ -639,6 +655,12 @@ body {
   .spain {
     width: 49.6%;
     justify-content: flex-end;
+  }
+  .spain-bottom {
+    justify-content: flex-end;
+  }
+  .spain--bottom {
+    justify-content: flex-start;
   }
 }
 

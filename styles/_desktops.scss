@@ -25,10 +25,18 @@
         }    
     }
 
-    // ***** Spain Top *****    
+    // ***** Spain *****    
 
     .spain {
         width: 49.6%;
         justify-content: flex-end;
+
+        &-bottom {
+            justify-content: flex-end;
+        }
+
+        &--bottom {
+            justify-content: flex-start;
+        }
     }
 }
