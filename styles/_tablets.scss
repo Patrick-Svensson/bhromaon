@@ -6,10 +6,16 @@
         margin: 1.4rem;
     }
 
-    .navbar{
+    .navbar {
+        height: 7rem;
         border-top: 1.4rem solid colours.$headings;
         border-right: 1.4rem solid colours.$headings;
-        border-left: 1.4rem solid colours.$headings;    
+        border-left: 1.4rem solid colours.$headings;
+
+        &-brand {
+            padding-top: 1rem;
+        }
+        
     }
 
     .spain-box__description {

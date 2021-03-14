@@ -73,7 +73,7 @@ body {
   letter-spacing: 0.14rem;
   text-transform: uppercase;
   color: #fff;
-  padding-left: 0.5rem;
+  padding-left: 2rem;
 }
 .navbar-toggler-icon {
   font-size: 2.6rem;
@@ -453,9 +453,13 @@ body {
   }
 
   .navbar {
+    height: 7rem;
     border-top: 1.4rem solid #fff;
     border-right: 1.4rem solid #fff;
     border-left: 1.4rem solid #fff;
+  }
+  .navbar-brand {
+    padding-top: 1rem;
   }
 
   .spain-box__description {
