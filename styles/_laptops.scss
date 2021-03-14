@@ -1,4 +1,6 @@
 @media screen and (min-width: 769px) {
+
+    // ***** Spain *****
     
     .spain {
         align-items: flex-end;
@@ -10,6 +12,32 @@
             &__content {
                 height: 70%;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 880px) {
+
+    // ***** Our Tourist *****
+
+    .tourist {
+
+        &-wrapper {
+            position: static;
+        }
+
+        &__container {
+            display: flex;
+        }
+
+        &__box {
+            width: 100%;
+            position: static;
+            padding: 0;
+        }
+
+        &__heading {
+            font-size: 3.6rem;
         }
     }
 }

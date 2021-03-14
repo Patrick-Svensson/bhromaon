@@ -63,7 +63,7 @@ body {
   border-left: 0.8rem solid #fff;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .navbar-brand {
   font-family: "Josefin Sans", sans-serif;
@@ -397,20 +397,23 @@ body {
   height: 73.1rem;
   background-position: 20%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .tourist-wrapper {
   width: 100%;
-  height: 60%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
 }
-.tourist__container {
-  width: 90%;
-  height: auto;
+.tourist__wrapper {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .tourist__heading {
   font-family: "Aleo", serif;
@@ -419,9 +422,24 @@ body {
   color: #fff;
   padding-bottom: 1rem;
 }
-.tourist__image {
-  max-width: 100%;
+.tourist__container {
+  width: 90%;
   height: auto;
+}
+.tourist__image {
+  width: 275px;
+  height: 176px;
+  z-index: 0;
+}
+.tourist__box {
+  width: 275px;
+  height: 176px;
+  background-color: #232323;
+  opacity: 90%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
 }
 
 .footer {
@@ -502,6 +520,29 @@ body {
     padding-top: 1.4em;
     padding-bottom: 1.2em;
   }
+
+  .tourist-wrapper {
+    height: 80%;
+  }
+  .tourist__container {
+    width: 90%;
+    height: auto;
+  }
+  .tourist__image {
+    width: 400px;
+    height: 256px;
+    z-index: 0;
+  }
+  .tourist__box {
+    width: 400px;
+    height: 256px;
+    background-color: #232323;
+    opacity: 90%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+  }
 }
 @media screen and (min-width: 769px) {
   .spain {
@@ -513,6 +554,22 @@ body {
   }
   .spain-box__content {
     height: 70%;
+  }
+}
+@media screen and (min-width: 880px) {
+  .tourist-wrapper {
+    position: static;
+  }
+  .tourist__container {
+    display: flex;
+  }
+  .tourist__box {
+    width: 100%;
+    position: static;
+    padding: 0;
+  }
+  .tourist__heading {
+    font-size: 3.6rem;
   }
 }
 @media screen and (min-width: 993px) {
@@ -691,6 +748,10 @@ body {
   }
   .spain--bottom {
     justify-content: flex-start;
+  }
+
+  .tourist__container {
+    max-width: 1113px;
   }
 }
 
