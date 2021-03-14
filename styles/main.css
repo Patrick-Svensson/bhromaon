@@ -531,17 +531,10 @@ body {
   .tourist__image {
     width: 400px;
     height: 256px;
-    z-index: 0;
   }
   .tourist__box {
     width: 400px;
     height: 256px;
-    background-color: #232323;
-    opacity: 90%;
-    z-index: 1;
-    position: absolute;
-    bottom: 0;
-    right: 5%;
   }
 }
 @media screen and (min-width: 769px) {
