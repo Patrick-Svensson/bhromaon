@@ -31,7 +31,7 @@ body {
   text-decoration: none;
   color: #fff;
   background-color: #5474fd;
-  padding: 1em 2.4em 0.8em 2.4em;
+  padding: 1.2em 2.4em 1em 2.4em;
   position: relative;
 }
 
@@ -44,7 +44,7 @@ body {
   text-align: center;
   text-decoration: none;
   color: #fff;
-  padding: 1em 2.4em 0.8em 2.4em;
+  padding: 1.2em 2.4em 1em 2.4em;
   background-color: #496bfe;
   clip-path: polygon(0 0, 25% 0, 50% 100%, 0% 100%);
   position: absolute;
@@ -234,9 +234,7 @@ body {
 }
 .choose-us__text {
   font-family: "Josefin Sans", sans-serif;
-  font-weight: normal;
-  font-size: 1rem;
-  letter-spacing: 0.1rem;
+  font-weight: 400;
   color: #e8e8e8;
 }
 .choose-us__images-container {
@@ -337,7 +335,7 @@ body {
 }
 .spain-box {
   width: 85%;
-  height: 70%;
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,7 +368,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   color: #e8e8e8;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 0.06rem;
 }
 .spain-box__button {
@@ -462,6 +460,8 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   color: #e8e8e8;
+  font-size: 1.1rem;
+  letter-spacing: 0.06rem;
 }
 
 .footer {
