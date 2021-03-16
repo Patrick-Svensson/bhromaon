@@ -243,6 +243,8 @@ body {
 
     &__text {
         @include text;
+        letter-spacing: 0.08rem;
+        padding-bottom: 1rem;
     }
 
     &__images-container {
@@ -381,6 +383,7 @@ body {
             font-family: fonts.$main;
             font-weight: 400;
             font-size: 1.5rem;
+            letter-spacing: .2rem;
             line-height: .2rem;
             color: colours.$text;
         }
@@ -391,7 +394,7 @@ body {
             padding-bottom: 1rem;
         }
 
-        &__description {
+        &__paragraph {
             @include text;
             @include paragraph;
         }
@@ -442,7 +445,7 @@ body {
         height: 40%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -456,14 +459,14 @@ body {
     }
 
     &__image {
-        width: 275px;
-        height: 176px;
+        width: 27,5rem;
+        height: 17.5rem;
         z-index: 0;
     }
 
     &-box {
-        width: 275px;
-        height: 300px;
+        width: 27.5rem;
+        height: 30rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -490,11 +493,17 @@ body {
         &__paragraph {
             @include text;
             @include paragraph;
+            line-height: 2rem;
         }
-    }
-
-    
+    }  
 }
+
+.quote-icon {
+    font-size: 2rem;
+    color: colours.$bhromaon-blue;
+    padding-right: 1%;
+}
+
 
 // ***** Footer *****
 
@@ -547,11 +556,6 @@ body {
         font-size: 1.6rem;
         color: colours.$text;
     }
-
-    &__icon--alt-colour {
-        color: colours.$bhromaon-blue;
-    }
-
 }
 
 @import "tablets";

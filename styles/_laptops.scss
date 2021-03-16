@@ -35,15 +35,8 @@
         }
 
         &__image {
-            width: 445px;
-            height: 284px;
-        }
-
-        &-box {
-            width: 100%;
-            height: 100%;
-            position: static;
-            padding: 0;
+            width: 44.5rem;
+            height: 28.4rem;
         }
 
         &__heading-container {
@@ -56,6 +49,22 @@
         &__heading {
             font-size: 3.6rem;
         }
+
+        &-box {
+            width: 100%;
+            height: 100%;
+            position: static;
+            justify-content: flex-end;
+            padding-right: 1rem;
+
+            &__paragraph {
+                line-height: 2.2rem;
+            }
+        }
+    }
+    
+    .quote-icon {
+        font-size: 2.8rem;
     }
 }
 
@@ -171,11 +180,11 @@
     }
 
     &__heading {
-        font-size: 3.6rem;
+        @include heading-2--laptop;
     }
 
     &__text {
-        font-size: 1.6rem;
+        @include paragraph--laptop;
     }
 
     &__images-container {
@@ -191,6 +200,8 @@
     // ***** How It Works *****
 
     .works {
+
+        height: 34rem;;
 
         &__arcs {
             width:75%;  
@@ -226,13 +237,24 @@
         }
 
         &__heading {
-            font-size: 3.6rem;
-            line-height: .26rem;
+            @include heading-2--laptop;
         }
 
         &__icon {
             font-size: 5rem;
         }
+    }
+
+    // ***** Spain *****
+
+    .spain-box__paragraph {
+        @include paragraph--laptop;
+    }
+
+    // ***** Our Tourist *****
+
+    .tourist-box__paragraph {
+        @include paragraph--laptop;
     }
 
     // ***** Footer *****
@@ -243,7 +265,7 @@
         }
 
         &__sub-heading {
-            font-size: 1.6rem;
+            @include paragraph--laptop;
         }
     }
 }

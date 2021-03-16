@@ -6,6 +6,20 @@
         margin: 1.4rem;
     }
 
+    // ***** Buttons *****
+
+    .button {
+        align-self: flex-start;
+
+        &--large {
+            font-size: 1.6rem;
+            padding-top: 1.4em;
+            padding-bottom: 1.2em;
+        }
+    }
+
+    // ***** Navigation *****
+
     .navbar {
         height: 7rem;
         border-top: 1.4rem solid colours.$headings;
@@ -18,22 +32,21 @@
         
     }
 
-    .spain-box__description {
-        font-size: 1.4rem;
-        line-height: 2.6rem;
-        letter-spacing: .08rem;
-    }
+    // ***** Spain *****
 
-    .button {
-        align-self: flex-start;
+    .spain-box {
 
-        &--large {
-            font-size: 1.6rem;
-            padding-top: 1.4em;
-            padding-bottom: 1.2em;
+        &__country {
+            font-size: 2rem;
+        }
+
+        &__paragraph {
+            @include paragraph--tablet;
         }
     }
     
+    // ***** Our Tourist *****
+
     .tourist {
 
         &-wrapper {
@@ -50,18 +63,22 @@
         }
 
         &__image {
-            width: 400px;
-            height: 256px;
+            width: 40rem;
+            height: 25.6rem;
         }
 
         &-box {
-            width: 400px;
-            height: 256px;
+            width: 40rem;
+            height: 25.6rem;
         }
 
         &__heading {
             font-size: 2.6rem;
         }
+    }
+
+    .qoute-icon {
+        font-size: 3rem;
     }
 }
 
