@@ -32,7 +32,7 @@
     left: 0;
 }
 
-@mixin spain-text {
+@mixin text {
     font-family: fonts.$main;
     font-weight: 400;
     color: colours.$text;
@@ -44,4 +44,9 @@
     font-size: 2rem;
     color: colours.$headings;
     padding-bottom: 1rem;
+}
+
+@mixin heading-3 {
+    font-size: 2rem;
+    text-transform: uppercase;
 }

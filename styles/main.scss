@@ -390,14 +390,13 @@ body {
         }
 
         &__site {
-            @include spain-text;
-            font-size: 2rem;
-            text-transform: uppercase;
+            @include text;
+            @include heading-3;
             padding-bottom: 1rem;
         }
 
         &__description {
-            @include spain-text;
+            @include text;
             font-size: 1.2rem;
             letter-spacing: .06rem;
         }
@@ -456,7 +455,7 @@ body {
         @include heading-2;
     }
 
-    &__container {
+    &-container {
         width: 90%;
         height: auto;
     }
@@ -467,16 +466,38 @@ body {
         z-index: 0;
     }
 
-    &__box {
+    &-box {
         width: 275px;
         height: 176px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: colours.$bg-dark;
         opacity: 90%;;
         z-index: 1;
         position: absolute;
         bottom: 0;
         right: 5%;
+
+        &__text-container {
+            width: 90%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__sub-heading {
+            @include text;
+            @include heading-3;
+        }
+
+        &__paragraph {
+            @include text;
+        }
     }
+
+    
 }
 
 // ***** Footer *****
