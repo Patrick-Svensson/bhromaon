@@ -26,14 +26,31 @@
             position: static;
         }
 
+        &__wrapper {
+            height: 80%;
+        }
+
         &-container {
             display: flex;
         }
 
+        &__image {
+            width: 445px;
+            height: 284px;
+        }
+
         &-box {
             width: 100%;
+            height: 100%;
             position: static;
             padding: 0;
+        }
+
+        &__heading-container {
+            width: auto;
+            height: 12rem;
+            display: flex;
+            align-items: flex-end;
         }
 
         &__heading {

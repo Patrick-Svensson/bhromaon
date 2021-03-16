@@ -39,6 +39,10 @@
         &-wrapper {
             height: 80%;
         }
+
+        &__wrapper {
+            height: 60%;
+        }
         
         &-container {
             width: 90%;
@@ -53,6 +57,10 @@
         &-box {
             width: 400px;
             height: 256px;
+        }
+
+        &__heading {
+            font-size: 2.6rem;
         }
     }
 }

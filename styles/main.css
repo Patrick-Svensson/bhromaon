@@ -337,7 +337,7 @@ body {
 }
 .spain-box {
   width: 85%;
-  height: 80%;
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -354,7 +354,7 @@ body {
 .spain-box__country {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 0.2rem;
   color: #e8e8e8;
 }
@@ -362,7 +362,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   color: #e8e8e8;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   padding-bottom: 1rem;
 }
@@ -400,7 +400,7 @@ body {
 }
 .tourist-wrapper {
   width: 100%;
-  height: 70%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -409,7 +409,7 @@ body {
 }
 .tourist__wrapper {
   width: 100%;
-  height: 60%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -433,7 +433,7 @@ body {
 }
 .tourist-box {
   width: 275px;
-  height: 176px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -455,7 +455,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   color: #e8e8e8;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
 }
 .tourist-box__paragraph {
@@ -546,6 +546,9 @@ body {
   .tourist-wrapper {
     height: 80%;
   }
+  .tourist__wrapper {
+    height: 60%;
+  }
   .tourist-container {
     width: 90%;
     height: auto;
@@ -557,6 +560,9 @@ body {
   .tourist-box {
     width: 400px;
     height: 256px;
+  }
+  .tourist__heading {
+    font-size: 2.6rem;
   }
 }
 @media screen and (min-width: 769px) {
@@ -575,13 +581,27 @@ body {
   .tourist-wrapper {
     position: static;
   }
+  .tourist__wrapper {
+    height: 80%;
+  }
   .tourist-container {
     display: flex;
   }
+  .tourist__image {
+    width: 445px;
+    height: 284px;
+  }
   .tourist-box {
     width: 100%;
+    height: 100%;
     position: static;
     padding: 0;
+  }
+  .tourist__heading-container {
+    width: auto;
+    height: 12rem;
+    display: flex;
+    align-items: flex-end;
   }
   .tourist__heading {
     font-size: 3.6rem;
