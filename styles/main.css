@@ -718,10 +718,10 @@ body {
     border: none;
   }
   .navbar-collapse {
-    max-width: 60%;
+    max-width: 52rem;
     display: flex;
     justify-content: center;
-    padding: 0;
+    margin-right: 3rem;
   }
   .navbar-nav {
     width: 100%;
@@ -739,7 +739,7 @@ body {
   }
 
   .container-fluid {
-    width: 70%;
+    width: 85%;
   }
 
   .choose-us {
@@ -750,6 +750,7 @@ body {
   .choose-us__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     height: 45rem;
   }
   .choose-us__content-container {
@@ -838,21 +839,21 @@ body {
 @media screen and (min-width: 1270px) {
   .nav-link {
     font-size: 1.4rem;
-    line-height: 2.6rem;
+  }
+
+  .container-fluid {
+    width: 67%;
   }
 
   .choose-us__wrapper {
-    width: 63%;
+    width: 110rem;
   }
-  .choose-us__images-container {
-    min-width: 43rem;
-    align-items: flex-start;
-  }
-  .choose-us__images {
-    max-width: 73%;
-  }
-  .choose-us__images--bottom {
-    align-self: flex-end;
+  .choose-us__content-container {
+    width: 65%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
   }
 
   .spain {

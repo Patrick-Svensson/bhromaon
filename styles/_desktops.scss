@@ -4,29 +4,28 @@
 
     .nav-link {
         font-size: 1.4rem;
-        line-height: 2.6rem;
     }
+        
+    .container-fluid {
+        width: 67%;
+    }
+
 
     // ***** Why Choose Us *****
 
     .choose-us {
 
         &__wrapper {
-            width: 63%;
+            width: 110rem;
         }
     
-        &__images-container {
-            min-width: 43rem;
-            align-items: flex-start;
+        &__content-container {
+            width: 65%;
+            min-height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
         }
-
-        &__images {
-            max-width: 73%;
-        }
-
-        &__images--bottom {
-            align-self: flex-end;
-        }    
     }
 
     // ***** Spain *****    
