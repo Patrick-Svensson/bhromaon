@@ -184,12 +184,11 @@
     &__wrapper {
         display: flex;
         flex-direction: row;
-        width: 63%;
         height: 45rem;
     }
 
     &__content-container {
-        width: 65%;
+        width: 50%;
         min-height: 100%;
         display: flex;
         flex-direction: row;
@@ -213,7 +212,7 @@
     }
 
     &__images-container {
-        min-width: 35rem;
+        min-width: 43rem;
         height: 100%;
     }
 
@@ -294,13 +293,3 @@
         }
     }
 }
-
-@media (min-width: 993px) and (max-width: 1199px) {
-
-    // ***** Why Choose Us *****
-
-    .choose-us__wrapper {
-        width: 75%;
-    }
-}
-

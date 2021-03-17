@@ -11,6 +11,10 @@
 
     .choose-us {
 
+        &__wrapper {
+            width: 63%;
+        }
+    
         &__images-container {
             min-width: 43rem;
             align-items: flex-start;

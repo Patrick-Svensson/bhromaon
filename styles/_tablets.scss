@@ -32,6 +32,19 @@
         
     }
 
+    // ***** Why Choose Us *****
+
+    .choose-us {
+
+        &__images-container {
+            align-items: flex-start;
+        }
+
+        &__images--bottom {
+            align-self: flex-end;
+        }    
+    }
+
     // ***** How It Works *****
     
     .works {
