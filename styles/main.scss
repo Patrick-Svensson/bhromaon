@@ -29,7 +29,7 @@ body {
 
 .button {
     align-self: center;
-    position: relative
+    position: relative;
 }
 
 .button--light {
@@ -165,7 +165,7 @@ body {
     margin-bottom: 2rem;
 
     &__placeholder {
-        min-width: 70%;
+        min-width: 69%;
         font-family: fonts.$main;
         font-size: 1rem;
         font-weight: 400;
@@ -176,16 +176,12 @@ body {
     }
 
     &__button {
-        min-width:30%;
-        font-family: fonts.$secondary;
-        font-weight: 400;
+        @include button-bg-light;
+        min-width:31%;
         font-size: 1rem;
-        text-align: center;
-        text-transform: uppercase;
-        background-color: colours.$bhromaon-blue;
-        text-decoration: none; 
-        color: colours.$headings;
-        padding: 1.1rem;
+        letter-spacing: .06rem;
+        padding: 1.1rem 1rem;
+        position: static;
 
         &:hover {
             background-color: darken(colours.$bhromaon-blue, $amount: 10);
@@ -366,8 +362,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: colours.$bg-dark;
-        opacity: 90%;
+        background-color: colours.$bg-dark-transparent;
 
         &__content {
             width: 90%;

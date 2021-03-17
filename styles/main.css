@@ -29,10 +29,11 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  outline: none;
+  border: none;
   color: #fff;
   background-color: #5474fd;
   padding: 1.2em 2.4em 1em 2.4em;
-  position: relative;
 }
 
 .button--dark {
@@ -43,6 +44,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  outline: none;
+  border: none;
   color: #fff;
   padding: 1.2em 2.4em 1em 2.4em;
   background-color: #496bfe;
@@ -163,7 +166,7 @@ body {
   margin-bottom: 2rem;
 }
 .input-field__placeholder {
-  min-width: 70%;
+  min-width: 69%;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -173,16 +176,23 @@ body {
   padding: 1rem;
 }
 .input-field__button {
-  min-width: 30%;
   font-family: "Aleo", serif;
   font-weight: 400;
-  font-size: 1rem;
-  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
-  background-color: #5474fd;
+  text-align: center;
   text-decoration: none;
+  outline: none;
+  border: none;
   color: #fff;
-  padding: 1.1rem;
+  background-color: #5474fd;
+  padding: 1.2em 2.4em 1em 2.4em;
+  min-width: 31%;
+  font-size: 1rem;
+  letter-spacing: 0.06rem;
+  padding: 1.1rem 1rem;
+  position: static;
 }
 .input-field__button:hover {
   background-color: #224bfc;
@@ -340,8 +350,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #232323;
-  opacity: 90%;
+  background-color: rgba(35, 35, 35, 0.9);
 }
 .spain-box__content {
   width: 90%;
@@ -614,6 +623,9 @@ body {
 @media screen and (min-width: 769px) {
   .input-field {
     min-width: 48rem;
+  }
+  .input-field__button {
+    padding: 1.1rem;
   }
 
   .works {

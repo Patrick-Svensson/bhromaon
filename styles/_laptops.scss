@@ -4,6 +4,10 @@
 
         .input-field {
             min-width: 48rem;
+
+            &__button {
+                padding: 1.1rem;
+            }
         }
 
         // ***** How It Works *****

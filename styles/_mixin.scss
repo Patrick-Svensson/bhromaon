@@ -9,10 +9,11 @@
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
+    outline: none;
+    border: none;
     color: colours.$headings;
     background-color: colours.$bhromaon-blue;
     padding: 1.2em 2.4em 1em 2.4em; 
-    position: relative; 
 }
 
 @mixin button-bg-dark {
@@ -23,6 +24,8 @@
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
+    outline: none;
+    border: none;
     color: colours.$headings;
     padding: 1.2em 2.4em 1em 2.4em;
     background-color: colours.$button;
