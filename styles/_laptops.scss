@@ -5,8 +5,16 @@
         .input-field {
             min-width: 48rem;
 
+            &__placeholder {
+                padding: 1.3rem 1rem;
+                font-size: 1.2rem;
+                letter-spacing: .15rem;    
+            }
+
             &__button {
-                padding: 1.1rem;
+                padding: 1.3rem 1.1rem;
+                font-size: 1.2rem;
+                letter-spacing: .15rem;    
             }
         }
 
@@ -120,6 +128,7 @@
 
         &__scroll--text {
             font-size: 1.4rem;
+            padding-top: 4rem;
         }
     }
 
@@ -130,18 +139,22 @@
 // ***** Header Input Field *****
 
     .input-field {
-        min-width: 65rem;
+        min-width: 62rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
 
         &__placeholder {
             min-width: 80%;
             font-size: 1.4rem;
             letter-spacing: .28rem;
+            padding: 1.7rem 1rem;
         }
 
         &__button {
             min-width: 20%;
             font-size: 1.4rem;
             letter-spacing: .14rem;
+            padding: 1.7rem 1.1rem;
         }
     }
 
