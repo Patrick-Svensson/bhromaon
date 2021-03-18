@@ -30,14 +30,18 @@ body {
 .button {
     align-self: center;
     position: relative;
-}
 
-.button--light {
-    @include button-bg-light;
-}
+    &--light {
+        @include button-bg-light;
+    }
 
-.button--dark {
-    @include button-bg-dark;
+    &--dark {
+        @include button-bg-dark;
+    }
+
+    &:hover {
+        box-shadow: rgba(256, 256, 256, 0.3) 0px 3px 6px;
+    }
 }
 
 // ***** Navigation *****
@@ -192,7 +196,7 @@ body {
 
         &:hover {
             background-color: darken(colours.$bhromaon-blue, $amount: 10);
-            color: darken(colours.$headings, $amount: 10);
+            color: darken(colours.$headings, $amount: 10);        
         }
     }
 

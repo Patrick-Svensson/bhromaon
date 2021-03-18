@@ -20,7 +20,6 @@ body {
   align-self: center;
   position: relative;
 }
-
 .button--light {
   font-family: "Aleo", serif;
   font-weight: 400;
@@ -35,7 +34,6 @@ body {
   background-color: #5474fd;
   padding: 1.2em 2.4em 1em 2.4em;
 }
-
 .button--dark {
   font-family: "Aleo", serif;
   font-weight: 400;
@@ -53,6 +51,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+.button:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 3px 6px;
 }
 
 .navbar {
