@@ -5,7 +5,7 @@
     // ***** Header *****
 
     .header__container {
-        height: 48%;
+        height: 46%;
         margin-top: 3rem;
     }
     
@@ -52,7 +52,7 @@
         }
 
         &-box__site {
-            @include heading-3-desktop;
+            @include heading-3--desktop;
         }
     }
 
@@ -65,7 +65,7 @@
         }
 
         &-box__sub-heading {
-            @include heading-3-desktop;
+            @include heading-3--desktop;
         }
 
         &-box__paragraph {

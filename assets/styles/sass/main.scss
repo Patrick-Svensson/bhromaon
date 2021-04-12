@@ -122,18 +122,19 @@ body {
         width: 100%;
         height: auto;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
     &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: 2.5rem;
         color: colours.$headings;
         font-family: fonts.$main;
         letter-spacing: .48rem;
-        font-weight: 700;
         text-transform: uppercase;
+        font-weight: 700;
         margin: 0;
     }
 
@@ -141,6 +142,7 @@ body {
         font-size: 1.2rem;
         font-weight: 400;
         letter-spacing: .68rem;
+        text-transform: capitalize;
         color: colours.$headings;
         font-family: fonts.$main;
         margin: 0;
@@ -293,8 +295,9 @@ body {
         width: 20rem;
         height: 6rem;
         display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__arcs {
@@ -342,6 +345,10 @@ body {
     }
 
     &__heading {
+        visibility: hidden;
+    }
+
+    &__sub-heading {
         font-family: fonts.$secondary;
         font-weight: 400;
         font-size: 1.2rem;

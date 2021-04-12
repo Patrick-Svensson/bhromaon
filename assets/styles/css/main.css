@@ -127,23 +127,25 @@ body {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .header__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 2.5rem;
   color: #fff;
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: 0.48rem;
-  font-weight: 700;
   text-transform: uppercase;
+  font-weight: 700;
   margin: 0;
 }
 .header__sub-heading {
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.68rem;
+  text-transform: capitalize;
   color: #fff;
   font-family: "Josefin Sans", sans-serif;
   margin: 0;
@@ -291,8 +293,9 @@ body {
   width: 20rem;
   height: 6rem;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .works__arcs {
   width: 100%;
@@ -331,6 +334,9 @@ body {
   margin-top: 2rem;
 }
 .works__heading {
+  visibility: hidden;
+}
+.works__sub-heading {
   font-family: "Aleo", serif;
   font-weight: 400;
   font-size: 1.2rem;
@@ -593,7 +599,7 @@ body {
     width: 45rem;
     height: 7.5rem;
   }
-  .works__heading {
+  .works__sub-heading {
     font-size: 1.8rem;
   }
 
@@ -663,7 +669,7 @@ body {
     width: 76rem;
     height: 10rem;
   }
-  .works__heading {
+  .works__sub-heading {
     font-family: "Aleo", serif;
     font-weight: 400;
     font-size: 2rem;
@@ -829,9 +835,6 @@ body {
   .works__arcs-wrapper {
     width: 77rem;
     height: 18rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
   }
   .works__icon-wrapper {
     width: 77rem;
@@ -852,7 +855,7 @@ body {
     align-items: center;
     margin-top: 2rem;
   }
-  .works__heading {
+  .works__sub-heading {
     font-size: 3.6rem;
   }
   .works__icon {
@@ -880,7 +883,7 @@ body {
 }
 @media screen and (min-width: 1270px) {
   .header__container {
-    height: 48%;
+    height: 46%;
     margin-top: 3rem;
   }
 
