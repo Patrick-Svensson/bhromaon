@@ -19,9 +19,6 @@ body {
 .button {
   align-self: center;
   position: relative;
-  border: none;
-}
-.button--light {
   font-family: "Aleo", serif;
   font-weight: 400;
   font-size: 1.2rem;
@@ -30,18 +27,12 @@ body {
   text-align: center;
   border: none;
   color: #fff;
+}
+.button--light {
   background-color: #5474fd;
   padding: 1.2em 2.4em 1em 2.4em;
 }
 .button--dark {
-  font-family: "Aleo", serif;
-  font-weight: 400;
-  font-size: 1.2rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
-  color: #fff;
   padding: 1.2em 2.4em 1em 2.4em;
   background-color: #496bfe;
   -webkit-clip-path: polygon(0 0, 25% 0, 50% 100%, 0% 100%);
@@ -185,20 +176,18 @@ body {
   padding: 1rem;
 }
 .input-field__button {
+  background-color: #5474fd;
+  padding: 1.2em 2.4em 1em 2.4em;
   font-family: "Aleo", serif;
   font-weight: 400;
-  font-size: 1.2rem;
-  letter-spacing: 0.15rem;
   text-transform: uppercase;
   text-align: center;
   border: none;
   color: #fff;
-  background-color: #5474fd;
-  padding: 1.2em 2.4em 1em 2.4em;
   min-width: 31%;
   font-size: 1rem;
   letter-spacing: 0.06rem;
-  padding: 1.1rem 1rem;
+  padding: 1.2rem 1rem 1rem 1rem;
   position: static;
 }
 .input-field__button:hover {
@@ -750,7 +739,7 @@ body {
     min-width: 20%;
     font-size: 1.4rem;
     letter-spacing: 0.14rem;
-    padding: 1.7rem 1.1rem;
+    padding: 1.8rem 1.1rem 1.6rem 1.1rem;
   }
 
   .navbar {
