@@ -44,7 +44,7 @@
                 height: 10rem;
             }
     
-            &__heading {
+            &__sub-heading {
                 @include heading-2;
             }
         }
@@ -256,9 +256,6 @@
         &__arcs-wrapper {
             width: 77rem;
             height: 18rem;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
         }
         
         &__icon-wrapper {
@@ -282,7 +279,7 @@
             margin-top: 2rem;
         }
 
-        &__heading {
+        &__sub-heading {
             @include heading-2--laptop;
         }
 
