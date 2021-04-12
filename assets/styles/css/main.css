@@ -19,6 +19,7 @@ body {
 .button {
   align-self: center;
   position: relative;
+  border: none;
 }
 .button--light {
   font-family: "Aleo", serif;
@@ -27,8 +28,6 @@ body {
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: none;
-  outline: none;
   border: none;
   color: #fff;
   background-color: #5474fd;
@@ -41,8 +40,6 @@ body {
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: none;
-  outline: none;
   border: none;
   color: #fff;
   padding: 1.2em 2.4em 1em 2.4em;
@@ -194,8 +191,6 @@ body {
   letter-spacing: 0.15rem;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: none;
-  outline: none;
   border: none;
   color: #fff;
   background-color: #5474fd;

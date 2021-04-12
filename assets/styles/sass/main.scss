@@ -30,6 +30,7 @@ body {
 .button {
     align-self: center;
     position: relative;
+    border: none;
 
     &--light {
         @include button-bg-light;
