@@ -3,14 +3,33 @@
 
 @mixin text-style-1 {
     font-family: fonts.$secondary;
-    font-weight: 400;
     color: colours.$headings;
+    font-weight: 400;
+}
+
+@mixin text-style-2 {
+    font-family: fonts.$main;
+    color: colours.$headings;
+    font-weight: 400;
+
 }
 
 @mixin text-style-3 {
     font-family: fonts.$main;
-    font-weight: 400;
     color: colours.$text;
+    font-weight: 400;
+}
+
+@mixin text-style-4 {
+    font-family: fonts.$secondary;
+    color: colours.$text;
+    font-weight: 400;
+}
+
+@mixin text-style-5 {
+    font-family: fonts.$main;
+    color: colours.$headings;
+    font-weight: 700;
 }
 
 @mixin paragraph {

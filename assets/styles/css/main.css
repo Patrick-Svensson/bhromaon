@@ -25,8 +25,8 @@ body {
   text-align: center;
   border: none;
   font-family: "Aleo", serif;
-  font-weight: 400;
   color: #fff;
+  font-weight: 400;
 }
 .button--light {
   background-color: #5474fd;
@@ -61,12 +61,12 @@ body {
 }
 .navbar-brand {
   font-family: "Josefin Sans", sans-serif;
+  color: #fff;
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 1.6rem;
   letter-spacing: 0.14rem;
   text-transform: uppercase;
-  color: #fff;
   padding-left: 2rem;
 }
 .navbar-toggler:focus {
@@ -89,8 +89,8 @@ body {
   line-height: 2.6rem;
   text-transform: uppercase;
   font-family: "Aleo", serif;
-  font-weight: 400;
   color: #fff;
+  font-weight: 400;
 }
 
 .header {
@@ -121,21 +121,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2.5rem;
-  color: #fff;
   font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
   letter-spacing: 0.48rem;
   text-transform: uppercase;
-  font-weight: 700;
   margin: 0;
 }
 .header__sub-heading {
-  font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
   font-weight: 400;
+  font-size: 1.2rem;
   letter-spacing: 0.68rem;
   text-transform: capitalize;
-  color: #fff;
-  font-family: "Josefin Sans", sans-serif;
   margin: 0;
 }
 .header__scroll {
@@ -145,11 +145,11 @@ body {
   align-items: center;
 }
 .header__scroll--text {
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0.28rem;
-  color: #fff;
   font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.28rem;
   margin-bottom: 0;
 }
 
@@ -176,14 +176,14 @@ body {
   padding: 1rem;
 }
 .input-field__button {
+  font-family: "Aleo", serif;
+  color: #fff;
+  font-weight: 400;
   background-color: #5474fd;
   padding: 1.2em 2.4em 1em 2.4em;
-  font-family: "Aleo", serif;
-  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   border: none;
-  color: #fff;
   min-width: 31%;
   font-size: 1rem;
   letter-spacing: 0.06rem;
@@ -233,15 +233,15 @@ body {
 }
 .choose-us__heading {
   font-family: "Aleo", serif;
-  font-weight: 400;
   color: #fff;
+  font-weight: 400;
   font-size: 2rem;
   padding-bottom: 1rem;
 }
 .choose-us__text {
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
   color: #e8e8e8;
+  font-weight: 400;
   letter-spacing: 0.08rem;
   padding-bottom: 1rem;
 }
@@ -322,9 +322,9 @@ body {
 }
 .works__sub-heading {
   font-family: "Aleo", serif;
+  color: #e8e8e8;
   font-weight: 400;
   font-size: 1.2rem;
-  color: #e8e8e8;
 }
 
 .spain {
@@ -364,21 +364,21 @@ body {
   letter-spacing: 0.2rem;
   line-height: 0.2rem;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
   color: #e8e8e8;
+  font-weight: 400;
 }
 .spain-box__site {
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
   color: #e8e8e8;
+  font-weight: 400;
   font-size: 1.6rem;
   text-transform: uppercase;
   padding-bottom: 1rem;
 }
 .spain-box__paragraph {
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
   color: #e8e8e8;
+  font-weight: 400;
   font-size: 1.1rem;
   letter-spacing: 0.01rem;
   line-height: 2.6rem;
@@ -427,8 +427,8 @@ body {
 }
 .tourist__heading {
   font-family: "Aleo", serif;
-  font-weight: 400;
   color: #fff;
+  font-weight: 400;
   font-size: 2rem;
   padding-bottom: 1rem;
 }
@@ -463,15 +463,15 @@ body {
 }
 .tourist-box__sub-heading {
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
   color: #e8e8e8;
+  font-weight: 400;
   font-size: 1.6rem;
   text-transform: uppercase;
 }
 .tourist-box__paragraph {
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
   color: #e8e8e8;
+  font-weight: 400;
   font-size: 1.1rem;
   letter-spacing: 0.01rem;
   line-height: 2.6rem;
@@ -509,21 +509,21 @@ body {
 }
 .footer__heading {
   font-family: "Josefin Sans", sans-serif;
+  color: #fff;
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.6rem;
   letter-spacing: 0.34rem;
   text-transform: uppercase;
-  color: #fff;
 }
 .footer__sub-heading {
   font-family: "Josefin Sans", sans-serif;
+  color: #fff;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 2.6rem;
   text-align: center;
   letter-spacing: 0.16rem;
-  color: #fff;
 }
 .footer__icon {
   font-size: 1.6rem;

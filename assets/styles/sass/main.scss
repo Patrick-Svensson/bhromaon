@@ -74,13 +74,11 @@ body {
     z-index: 2;
 
     &-brand {
-        font-family: fonts.$main;
-        font-weight: 700;
+        @include text-style-5;
         font-size: 1.4rem;
         line-height: 1.6rem;
         letter-spacing: .14rem;
         text-transform: uppercase;
-        color: colours.$headings;
         padding-left: 2rem;
     }
 
@@ -140,22 +138,18 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include text-style-5;
         font-size: 2.5rem;
-        color: colours.$headings;
-        font-family: fonts.$main;
         letter-spacing: .48rem;
         text-transform: uppercase;
-        font-weight: 700;
         margin: 0;
     }
 
     &__sub-heading {
+        @include text-style-2;
         font-size: 1.2rem;
-        font-weight: 400;
         letter-spacing: .68rem;
         text-transform: capitalize;
-        color: colours.$headings;
-        font-family: fonts.$main;
         margin: 0;
     }
 
@@ -167,11 +161,9 @@ body {
     }
 
     &__scroll--text {
+        @include text-style-2;
         font-size: 1rem;
-        font-weight: 400;
         letter-spacing: .28rem;
-        color: colours.$headings;
-        font-family: fonts.$main;
         margin-bottom: 0;
     }
 }
@@ -202,14 +194,12 @@ body {
     }
 
     &__button {
+        @include text-style-1;
         background-color: colours.$bhromaon-blue;
         padding: 1.2em 2.4em 1em 2.4em;
-        font-family: fonts.$secondary;
-        font-weight: 400;
         text-transform: uppercase;
         text-align: center;
         border: none;
-        color: colours.$headings;
         min-width:31%;
         font-size: 1rem;
         letter-spacing: .06rem;
@@ -369,10 +359,8 @@ body {
     }
 
     &__sub-heading {
-        font-family: fonts.$secondary;
-        font-weight: 400;
+        @include text-style-4;
         font-size: 1.2rem;
-        color: colours.$text;
     }
 }
 
@@ -569,23 +557,19 @@ body {
     }
 
     &__heading {
-        font-family: fonts.$main;
-        font-weight: 700;
+        @include text-style-5;
         font-size: 2rem;
         line-height: 2.6rem;
         letter-spacing: .34rem;
         text-transform: uppercase;
-        color: colours.$headings;
     }
 
     &__sub-heading {
-        font-family: fonts.$main;
-        font-weight: 400;
+        @include text-style-2;
         font-size: 1.4rem;
         line-height: 2.6rem;
         text-align: center;
         letter-spacing: .16rem;
-        color: colours.$headings;
     }
 
     &__icon {
