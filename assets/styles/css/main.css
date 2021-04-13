@@ -161,12 +161,13 @@ body {
 .input-field {
   display: flex;
   align-items: center;
-  min-width: 26rem;
+  width: 85vw;
+  max-width: 62rem;
   border: 1px solid #fff;
   margin-bottom: 2rem;
 }
 .input-field__placeholder {
-  min-width: 69%;
+  flex: 4;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -176,6 +177,7 @@ body {
   padding: 1rem;
 }
 .input-field__button {
+  flex: 1.4;
   font-family: "Aleo", serif;
   color: #fff;
   font-weight: 400;
@@ -184,7 +186,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   border: none;
-  min-width: 31%;
   font-size: 1rem;
   letter-spacing: 0.06rem;
   padding: 1.2rem 1rem 1rem 1rem;
@@ -544,6 +545,18 @@ body {
     padding-bottom: 1.2em;
   }
 
+  .header__heading {
+    font-size: 4.8rem;
+  }
+  .header__sub-heading {
+    font-size: 2.2rem;
+    letter-spacing: 0.68rem;
+  }
+  .header__scroll--text {
+    font-size: 1.4rem;
+    padding-top: 4rem;
+  }
+
   .navbar {
     height: 7rem;
     border-top: 1.4rem solid #fff;
@@ -555,7 +568,18 @@ body {
   }
 
   .input-field {
-    min-width: 35rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .input-field__placeholder {
+    font-size: 1.4rem;
+    letter-spacing: 0.28rem;
+    padding: 1.7rem 1rem;
+  }
+  .input-field__button {
+    font-size: 1.4rem;
+    letter-spacing: 0.14rem;
+    padding: 1.8rem 1.1rem 1.6rem 1.1rem;
   }
 
   .choose-us__images-container {
@@ -621,18 +645,20 @@ body {
   }
 }
 @media screen and (min-width: 769px) {
-  .input-field {
-    min-width: 48rem;
+  .header__heading {
+    font-size: 4.8rem;
   }
-  .input-field__placeholder {
-    padding: 1.3rem 1rem;
-    font-size: 1.2rem;
-    letter-spacing: 0.15rem;
+  .header__sub-heading {
+    font-size: 2.2rem;
+    letter-spacing: 0.68rem;
   }
-  .input-field__button {
-    padding: 1.3rem 1.1rem;
-    font-size: 1.2rem;
-    letter-spacing: 0.15rem;
+  .header__scroll--text {
+    font-size: 1.4rem;
+    padding-top: 4rem;
+  }
+
+  .fa-chevron-down {
+    font-size: 1.4rem;
   }
 
   .works {
@@ -705,40 +731,6 @@ body {
   }
 }
 @media screen and (min-width: 993px) {
-  .header__heading {
-    font-size: 4.8rem;
-  }
-  .header__sub-heading {
-    font-size: 2.2rem;
-    letter-spacing: 0.68rem;
-  }
-  .header__scroll--text {
-    font-size: 1.4rem;
-    padding-top: 4rem;
-  }
-
-  .fa-chevron-down {
-    font-size: 1.4rem;
-  }
-
-  .input-field {
-    min-width: 62rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-  .input-field__placeholder {
-    min-width: 80%;
-    font-size: 1.4rem;
-    letter-spacing: 0.28rem;
-    padding: 1.7rem 1rem;
-  }
-  .input-field__button {
-    min-width: 20%;
-    font-size: 1.4rem;
-    letter-spacing: 0.14rem;
-    padding: 1.8rem 1.1rem 1.6rem 1.1rem;
-  }
-
   .navbar {
     height: 8.3rem;
     position: sticky;

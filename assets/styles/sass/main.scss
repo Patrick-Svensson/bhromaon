@@ -178,12 +178,13 @@ body {
 .input-field {
     display: flex;
     align-items: center;
-    min-width: 26rem;
+    width: 85vw;
+    max-width: 62rem;
     border: 1px solid colours.$light;
     margin-bottom: 2rem;
 
     &__placeholder {
-        min-width: 69%;
+        flex: 4;
         font-family: fonts.$main;
         font-size: 1rem;
         font-weight: 400;
@@ -194,13 +195,13 @@ body {
     }
 
     &__button {
+        flex: 1.4;
         @include text-style-1;
         background-color: colours.$primary;
         padding: 1.2em 2.4em 1em 2.4em;
         text-transform: uppercase;
         text-align: center;
         border: none;
-        min-width:31%;
         font-size: 1rem;
         letter-spacing: .06rem;
         padding: 1.2rem 1rem 1rem 1rem;

@@ -2,23 +2,28 @@
 
 @media screen and (min-width: 769px) {
 
-        // ***** Header Input Field *****
+    // ***** Header *****
 
-        .input-field {
-            min-width: 48rem;
+    .header {
 
-            &__placeholder {
-                padding: 1.3rem 1rem;
-                font-size: 1.2rem;
-                letter-spacing: .15rem;    
-            }
-
-            &__button {
-                padding: 1.3rem 1.1rem;
-                font-size: 1.2rem;
-                letter-spacing: .15rem;    
-            }
+        &__heading {
+            font-size: 4.8rem;
         }
+
+        &__sub-heading {
+            font-size: 2.2rem;
+            letter-spacing: .68rem;
+        }
+
+        &__scroll--text {
+            font-size: 1.4rem;
+            padding-top: 4rem;
+        }
+    }
+
+    .fa-chevron-down {
+        font-size: 1.4rem;
+    }
 
         // ***** How It Works *****
     
@@ -115,51 +120,6 @@
 }
 
 @media screen and (min-width: 993px) {
-
-    // ***** Header *****
-
-    .header {
-
-        &__heading {
-            font-size: 4.8rem;
-        }
-
-        &__sub-heading {
-            font-size: 2.2rem;
-            letter-spacing: .68rem;
-        }
-
-        &__scroll--text {
-            font-size: 1.4rem;
-            padding-top: 4rem;
-        }
-    }
-
-    .fa-chevron-down {
-        font-size: 1.4rem;
-    }
-
-// ***** Header Input Field *****
-
-    .input-field {
-        min-width: 62rem;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-
-        &__placeholder {
-            min-width: 80%;
-            font-size: 1.4rem;
-            letter-spacing: .28rem;
-            padding: 1.7rem 1rem;
-        }
-
-        &__button {
-            min-width: 20%;
-            font-size: 1.4rem;
-            letter-spacing: .14rem;
-            padding: 1.8rem 1.1rem 1.6rem 1.1rem;
-        }
-    }
 
     // ***** Navigation *****
 

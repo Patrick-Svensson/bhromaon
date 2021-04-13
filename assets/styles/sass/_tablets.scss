@@ -18,6 +18,25 @@
         }
     }
 
+    // ***** Header *****
+
+    .header {
+
+        &__heading {
+            font-size: 4.8rem;
+        }
+
+        &__sub-heading {
+            font-size: 2.2rem;
+            letter-spacing: .68rem;
+        }
+
+        &__scroll--text {
+            font-size: 1.4rem;
+            padding-top: 4rem;
+        }
+    }
+
     // ***** Navigation *****
 
     .navbar {
@@ -35,7 +54,22 @@
     // ***** Header Input Field *****
 
     .input-field {
-        min-width: 35rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+
+        &__placeholder {
+            // min-width: 80%;
+            font-size: 1.4rem;
+            letter-spacing: .28rem;
+            padding: 1.7rem 1rem;
+        }
+
+        &__button {
+            // min-width: 20%;
+            font-size: 1.4rem;
+            letter-spacing: .14rem;
+            padding: 1.8rem 1.1rem 1.6rem 1.1rem;
+        }
     }
 
     // ***** Why Choose Us *****
