@@ -545,6 +545,16 @@ body {
     padding-bottom: 1.2em;
   }
 
+  .navbar {
+    height: 7rem;
+    border-top: 1.4rem solid #fff;
+    border-right: 1.4rem solid #fff;
+    border-left: 1.4rem solid #fff;
+  }
+  .navbar-brand {
+    padding-top: 1rem;
+  }
+
   .header__heading {
     font-size: 4.8rem;
   }
@@ -555,16 +565,6 @@ body {
   .header__scroll--text {
     font-size: 1.4rem;
     padding-top: 4rem;
-  }
-
-  .navbar {
-    height: 7rem;
-    border-top: 1.4rem solid #fff;
-    border-right: 1.4rem solid #fff;
-    border-left: 1.4rem solid #fff;
-  }
-  .navbar-brand {
-    padding-top: 1rem;
   }
 
   .input-field {
@@ -645,18 +645,6 @@ body {
   }
 }
 @media screen and (min-width: 769px) {
-  .header__heading {
-    font-size: 4.8rem;
-  }
-  .header__sub-heading {
-    font-size: 2.2rem;
-    letter-spacing: 0.68rem;
-  }
-  .header__scroll--text {
-    font-size: 1.4rem;
-    padding-top: 4rem;
-  }
-
   .fa-chevron-down {
     font-size: 1.4rem;
   }
