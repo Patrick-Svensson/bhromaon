@@ -3,31 +3,31 @@
 
 @mixin text-style-1 {
     font-family: fonts.$secondary;
-    color: colours.$headings;
+    color: colours.$light;
     font-weight: 400;
 }
 
 @mixin text-style-2 {
     font-family: fonts.$main;
-    color: colours.$headings;
+    color: colours.$light;
     font-weight: 400;
 }
 
 @mixin text-style-3 {
     font-family: fonts.$main;
-    color: colours.$text;
+    color: colours.$light-10;
     font-weight: 400;
 }
 
 @mixin text-style-4 {
     font-family: fonts.$secondary;
-    color: colours.$text;
+    color: colours.$light-10;
     font-weight: 400;
 }
 
 @mixin text-style-5 {
     font-family: fonts.$main;
-    color: colours.$headings;
+    color: colours.$light;
     font-weight: 700;
 }
 
