@@ -35,7 +35,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     border: none;
-    @include heading;
+    @include text-style-1;
 
     &--light {
         background-color: colours.$bhromaon-blue;
@@ -106,7 +106,7 @@ body {
     font-size: 1.4rem;
     line-height: 2.6rem;
     text-transform: uppercase;
-    @include heading;
+    @include text-style-1;
 }
 // ***** Header *****
 
@@ -267,13 +267,13 @@ body {
     }
 
     &__heading {
-        @include heading;
+        @include text-style-1;
         font-size: 2rem;
         padding-bottom: 1rem;
     }
 
     &__text {
-        @include text;
+        @include text-style-3;
         letter-spacing: 0.08rem;
         padding-bottom: 1rem;
     }
@@ -416,18 +416,18 @@ body {
             font-size: 1.5rem;
             letter-spacing: .2rem;
             line-height: .2rem;
-            @include text;
+            @include text-style-3;
         }
 
         &__site {
-            @include text;
+            @include text-style-3;
             font-size: 1.6rem;
             text-transform: uppercase;        
             padding-bottom: 1rem;
         }
 
         &__paragraph {
-            @include text;
+            @include text-style-3;
             @include paragraph;
         }
 
@@ -482,7 +482,7 @@ body {
     }
 
     &__heading {
-        @include heading;
+        @include text-style-1;
         font-size: 2rem;
         padding-bottom: 1rem;
     }
@@ -520,14 +520,14 @@ body {
         }
 
         &__sub-heading {
-            @include text;
+            @include text-style-3;
             font-size: 1.6rem;
             text-transform: uppercase;
         
         }
 
         &__paragraph {
-            @include text;
+            @include text-style-3;
             @include paragraph;
             line-height: 2rem;
         }
