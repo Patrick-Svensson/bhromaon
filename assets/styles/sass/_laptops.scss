@@ -45,7 +45,9 @@
             }
     
             &__sub-heading {
-                @include heading-2;
+                @include heading;
+                font-size: 2rem;
+                padding-bottom: 1rem;
             }
         }
     
@@ -230,11 +232,11 @@
     }
 
     &__heading {
-        @include heading-2--laptop;
+        font-size: 3.6rem;
     }
 
     &__text {
-        @include paragraph--laptop;
+        font-size: 1.6rem;
     }
 
     &__images-container {
@@ -280,7 +282,7 @@
         }
 
         &__sub-heading {
-            @include heading-2--laptop;
+            font-size: 3.6rem;
         }
 
         &__icon {
@@ -291,17 +293,17 @@
     // ***** Spain *****
 
     .spain-box__paragraph {
-        @include paragraph--laptop;
+        font-size: 1.6rem;
     }
 
     // ***** Our Tourist *****
 
     .tourist-box__paragraph {
-        @include paragraph--laptop;
+        font-size: 1.6rem;
     }
 
     .tourist__heading {
-        @include heading-2--laptop;
+        font-size: 3.6rem;
     }
 
     // ***** Footer *****
@@ -312,7 +314,7 @@
         }
 
         &__sub-heading {
-            @include paragraph--laptop;
+            font-size: 1.6rem;
         }
     }
 }

@@ -52,7 +52,7 @@
         }
 
         &-box__site {
-            @include heading-3--desktop;
+            font-size: 2rem;
         }
     }
 
@@ -65,7 +65,7 @@
         }
 
         &-box__sub-heading {
-            @include heading-3--desktop;
+            font-size: 2rem;
         }
 
         &-box__paragraph {

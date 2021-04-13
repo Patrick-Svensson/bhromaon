@@ -30,14 +30,12 @@ body {
 .button {
     align-self: center;
     position: relative;
-    font-family: fonts.$secondary;
-    font-weight: 400;
     font-size: 1.2rem;
     letter-spacing: .15rem;
     text-transform: uppercase;
     text-align: center;
     border: none;
-    color: colours.$headings;
+    @include heading;
 
     &--light {
         background-color: colours.$bhromaon-blue;
@@ -105,12 +103,10 @@ body {
 }
 
 .nav-link {
-    font-family: fonts.$secondary;
-    font-weight: 400;
     font-size: 1.4rem;
     line-height: 2.6rem;
     text-transform: uppercase;
-    color: colours.$headings;
+    @include heading;
 }
 // ***** Header *****
 
@@ -271,7 +267,9 @@ body {
     }
 
     &__heading {
-        @include heading-2;
+        @include heading;
+        font-size: 2rem;
+        padding-bottom: 1rem;
     }
 
     &__text {
@@ -415,17 +413,16 @@ body {
         }
 
         &__country {
-            font-family: fonts.$main;
-            font-weight: 400;
             font-size: 1.5rem;
             letter-spacing: .2rem;
             line-height: .2rem;
-            color: colours.$text;
+            @include text;
         }
 
         &__site {
             @include text;
-            @include heading-3;
+            font-size: 1.6rem;
+            text-transform: uppercase;        
             padding-bottom: 1rem;
         }
 
@@ -485,7 +482,9 @@ body {
     }
 
     &__heading {
-        @include heading-2;
+        @include heading;
+        font-size: 2rem;
+        padding-bottom: 1rem;
     }
 
     &-container {
@@ -522,7 +521,9 @@ body {
 
         &__sub-heading {
             @include text;
-            @include heading-3;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+        
         }
 
         &__paragraph {
